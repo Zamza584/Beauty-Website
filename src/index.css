@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  background-color: #DFBDA2;
+  max-width: 2500px;
+  margin: auto;
+}
+
+.header {
+  margin: auto;
+  background-color: #DFBDA2;
+  height: fit-content;
+}
+
+.nav-container {
+  padding: 50px 250px 0 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-items {
+  margin-left: auto;
+  display: flex;
+  gap: 110px;
+  list-style-type: none;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.nav-items a:hover {
+  color: #424242;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text {
+  margin-left: 100px;
+}
+
+.header-text h1 {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 45pt;
+  margin-bottom: 1rem;
+}
+
+.header-image-container {
+  position: relative;
+}
+
+.header-image {
+  width: 900px;
+  max-width: 900px;
+  min-width: 500px;
+  z-index: 0;
+  margin-right: 20rem;
+  top: -7rem;
+  right: 0;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #A97869;
+  color: white;
+  border: none;
+  border-radius: 50pt;
+}
+
+.btn:hover {
+  background-color: #c28571;
+  cursor: pointer;
+}
+
+/* carousel */
+.carousel-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  background-color: #F5F5F5;
+  padding: 10px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  background-color: #F5F5F5;
+  padding: 100px 50px;
+}
+
+.carousel-items {
+  overflow: hidden;
+  gap: 1rem;
+  padding: 2rem 3rem;
+  margin-left: 40px;
+  height: 500px;
+  display: flex;
+}
+
+.arrow {
+  top: calc(3%);
+  position: absolute;
+  outline: 0;
+  transition: all .5s;
+  border-radius: 35px;
+  z-index: 1000;
+  border: 0;
+  background: rgba(252, 28, 28, 0.5);
+  min-width: 43px;
+  min-height: 43px;
+  color: white;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.arrow>svg {
+  transform: scale(2);
+}
+
+.arrow--left {
+  right: calc(10% - 10px);
+}
+
+.arrow--right {
+  right: calc(4% + 1px);
+}
+
+.arrow:hover {
+  background-color: bisque;
+}
+
+.carousel-item {
+  min-width: 120px;
+  max-width: 200px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.carousel-item>h2 a {
+  color: black;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.carousel-item>p {
+  font-weight: 700;
+}
+
+.carousel-item>img {
+  display: block;
+  width: 100px;
+  margin: auto;
+}
+
+.icons-carousel {
+  position: absolute;
+  top: -40px;
+  right: 30px;
+}
+
+.title-top-sales {
+  width: 7rem;
+}
+
+.title-top-sales>h2 {
+  position: absolute;
+  top: 47%;
+  left: -20px;
+  transform: rotate(-90deg);
+  padding: 0 0 0 0;
+}
+
+/* main section */
+
+.main-section {
+  margin: 2rem;
+}
+
+.location-container {
+  width: 90%;
+  margin: auto;
+  background-color: #D6AA89;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+}
+
+.location-left {
+  width: 70%;
+  margin: auto;
+  padding: 2rem;
+}
+
+.location-left>h1 {
+  font-size: 4rem;
+  line-height: 49px;
+}
+
+.location-right {
+  background-color: #E6CBB7;
+}
+
+.location-right>img {
+  width: 90%;
+  padding: 40px;
+}
+
+/* footer container */
+
+.footer-section {
+  margin: 2rem;
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+  background-color: #E6CBB7;
+  height: 100%;
+  padding: 1rem 2rem 5rem 2rem;
+  margin-bottom: 4rem;
+}
+
+.footer-container>h1 {
+  font-size: 4rem;
+  padding: 2rem;
+  width: fit-content;
+  margin: auto;
+}
+
+.footer-grid {
+  width: 50%;
+  display: grid;
+  margin: auto;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-grid>ul>li {
+  list-style: none;
+}
+
+.footer-grid>ul>li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-grid>ul>li a:hover {
+  color: #424242;
+}
+
+.footer-container-extra {
+  height: 100px;
+  padding: 2.5rem;
+  background-color: #D9D9D9;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: black;
+  margin-right: 3rem;
+}
+
+.links-left>a {
+  margin-left: 3rem;
+}
+
+.links-right {
+  justify-self: end;
+}
