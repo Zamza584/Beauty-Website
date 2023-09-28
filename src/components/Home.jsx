@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './navbar';
+import Navbar from './Navbar.jsx';
 import headerImage from '../assets/header-image.png'
 
 const Home = () => {
