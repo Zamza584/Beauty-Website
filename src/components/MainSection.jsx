@@ -1,4 +1,5 @@
 import React from 'react'
+import location from '../assets/location.png';
 
 const MainSection = () => {
     return (
@@ -9,7 +10,7 @@ const MainSection = () => {
                     <button className='btn'>See Location</button>
                 </div>
                 <div className="location-right">
-                    <img src="./assets/location.png" alt="location illustration" />
+                    <img src={location} alt="location illustration" />
                 </div>
             </div>
         </div>
